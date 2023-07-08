@@ -59,8 +59,8 @@ a:after {
     position: absolute;
     left: 0; 
     width: 0;
-    top: 3rem;
-    height: 0.5rem; 
+    top: 2.5rem;
+    height: 0.4rem; 
     background-color: #ffffff; 
     content: "";
     transition: width 0.8s ease-out; 
