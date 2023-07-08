@@ -1,0 +1,72 @@
+th{
+    background-color: black;
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    font-family: 'Poppins', sans-serif; 
+    color: #ffffff; 
+}
+
+.main-text{
+    position: absolute;
+    top:2rem;
+    left: 5rem;
+    font-size: 3rem;
+     
+}
+
+.home{
+    position: absolute;
+    top: 3rem;
+    left: 25rem;
+    font-size: 2rem;
+}
+
+.market{
+    position: absolute;
+    top: 3rem;
+    left: 35rem;
+    font-size: 2rem;
+}
+
+.login{
+    position: absolute;
+    top: 3rem;
+    margin-left: 100rem;
+    font-size: 2rem;
+}
+
+.signup{
+    position: absolute;
+    top: 3rem;
+    left: 110rem;
+    font-size: 2rem;
+}
+
+a{
+    position: relative;
+    color:#ffffff; 
+    cursor: pointer;
+    line-height: 1rem; 
+    text-decoration: none;             
+
+}
+
+a:after {
+    display: block;
+    position: absolute;
+    left: 0; 
+    width: 0;
+    top: 2.5rem;
+    height: 0.4rem; 
+    background-color: #ffffff; 
+    content: "";
+    transition: width 0.8s ease-out; 
+}
+
+a:hover:after,
+a:focus:after {
+    width: 100%; 
+}
