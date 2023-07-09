@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FMarket</title>
     <link rel="stylesheet" href="static/market.css">
+
+    <link rel="shortcut icon" href="static/icon.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <h2 style="color: black;">Market page</h2>
-    
-
     <table>
-        <th>
+        <th class="main-table">
             <div class="main-text">FMarket</div>
 
             <div class="home">
@@ -29,7 +27,25 @@
             <div class="login">Login</div>
             <div class="signup">Signup</div>
         </th>
-    
+    </table>
+
+    <table class="pruduct-table">
+        <thead>
+            <tr class="row">
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Barcode</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>Value for Id</td>
+                    <td>Value for Name</td>
+                    <td>Value for Barcode</td>
+                    <td>Value for Price</td>
+                </tr>
+        </tbody>
     </table>
 </body>
 </html>
