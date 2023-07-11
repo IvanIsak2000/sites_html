@@ -49,38 +49,71 @@ body{
 
 }
 
-.sector{
-    position: relative;
-    top: 19rem;
-    font-size: 3.5rem;
-    padding: 1.5rem 1rem;
-    font-family: 'Datalegreya-Gradient';
+
+/* .without-decor{
+    text-decoration: none;
     color: white;
+    font-size: 3.5rem; 
+    height: 5rem;
 }
 
-
-a{
+.without-decor:hover{
+    background-color: #f4f4f4;
+    color: rgb(0, 0, 0);
+    transition-duration: 2s;
     position: relative;
-    color:#ffffff; 
-    cursor: pointer;
-    line-height: 1rem; 
-    text-decoration: none;             
-
 }
-
-a:after {
-    display: block;
+    
+ */
+ .wrapper{
+    /* position: fixed; */
     position: absolute;
-    left: 0; 
-    width: 0;
-    top: 0.1rem;
-    height: 4rem; 
-    background-color: #000000; 
+    top: 10rem;
+    left: 1rem;
+    /* transform: translate(-50%, -50%); */
+    padding: 10rem 2rem;
+  }
+  
+  a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 3.5rem;
+    font-family: 'Datalegreya-Thin';
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    border: 0.1rem solid #ffffff;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  a{
+    position: relative;
+    z-index: 2;
+  }
+  
+  a:after{
+    position: absolute;
     content: "";
-    transition: width 1.0s ease-out; 
-}
-
-a:hover:after,
-a:focus:after {
-    width:  100%; 
-}
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fcfbfb;
+    /* color: black; */
+    transition: all .35s;
+  }
+  
+  a:hover{
+    color: #000000;
+    font-size: 2rem;
+    background-color: #ffffff;
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
