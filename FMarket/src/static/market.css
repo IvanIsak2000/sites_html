@@ -15,19 +15,16 @@ body{
 }
 
 .pruduct-table{
+    background-color: black;
     position: absolute;
-    left: 10rem;
+    top: 10rem;
+    left: 5rem;
+    width: 95%;
     color: white;
-    position: absolute;
     font-size: 2rem;
-    top: 5rem;
 }
 
-/* .row{
-    position: absolute;
-    top: ;
-    color: red;
-} */
+
 .main-text{
     position: absolute;
     top:2rem;
