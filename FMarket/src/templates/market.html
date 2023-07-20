@@ -30,21 +30,16 @@
     </table>
 
     <table class="pruduct-table">
-        <thead>
-            <tr class="row">
-                <th scope="col">ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Barcode</th>
-                <th scope="col">Price</th>
-            </tr>
-        </thead>
         <tbody>
-                <tr>
-                    <td>Value for Id</td>
-                    <td>Value for Name</td>
-                    <td>Value for Barcode</td>
-                    <td>Value for Price</td>
-                </tr>
+                {% for item in items%}
+                    <tr>
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.barcode }}</td>
+                        <td>{{ item.price }}</td>
+                    </tr>
+                {%endfor%}
+
         </tbody>
     </table>
 </body>
