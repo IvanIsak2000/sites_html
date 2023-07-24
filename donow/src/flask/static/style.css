@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Orbitron&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -10,8 +9,6 @@
 body{
     background: radial-gradient(circle, #6c3c9b, #7140a1, #7643a7, #7c47ad, #814bb3);
 }
-
-
 
 .title{
     position: absolute;
