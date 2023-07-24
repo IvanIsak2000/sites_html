@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Orbitron&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(circle, #6c3c9b, #7140a1, #7643a7, #7c47ad, #814bb3);
+}
+
+
+
+.title{
+    position: absolute;
+    font-family: 'Comfortaa', cursive;
+    font-size: 6rem;
+    left:50%;
+    top: 15%;
+    color: white;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+}
+
+.time-place{
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+    font-family: 'Comfortaa', cursive;
+    font-weight: lighter;
+    left: 50%;
+    top: 25%;
+}
+
+.add-place{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 40%;
+    height: 10rem;
+    width: 50rem;
+    border-radius: 2rem;
+    background-color: #4F4F4F;
+    padding: 3rem 1rem;
+}
+
+.add-place input{
+    position: absolute;
+    height: 2.5rem;
+    width: 35rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    color: #4F4F4F;
+}
+
+.add-place button{
+    background: url(plus.png) 10% 10%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 1rem;
+    border: none;
+    height: 5rem;
+    width: 5rem;
+    top: 2.5rem;
+    left: 40rem;   
+}
+
+.add-place button:hover{
+   background-color: rgb(255, 255, 255);
+    transition:  1s ease;
+    scale: 1.1;   
+}
+
+.tasks-container{
+    position:relative;
+    top: 30rem;
+    left: 35rem;
+    height: 100%;
+    width: 50rem;
+    border-radius: 2rem;
+    padding: 2rem 2rem;
+
+}
+
+.taskname{
+    position: relative;
+    font-size: 2rem;
+    font-family: 'Comfortaa', cursive;
+    color: white; 
+    overflow-wrap: break-word;
+    background-color: transparent;
+    border: 0;
+    margin: 0.5rem;
+    background-color: #4F4F4F;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+}
+
+.taskname:hover{
+    text-decoration: line-through;
+    text-decoration-color: red; 
+}
