@@ -1,119 +1,128 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body{
     background-color: black;
      color: white;
 }
 
-@font-face {
-    font-family: 'Datalegreya-Thin';
-    src: url('/home/iwan/.local/share/fonts/Datalegreya-Thin.otf');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Datalegreya-Gradient';
-    src: url('/home/iwan/.local/share/fonts/Datalegreya-Gradient.otf');
-    font-weight: bolder;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Datalegreya-Dot';
-    src: url('/home/iwan/.local/share/fonts/Datalegreya-Dot.otf');
-    font-weight: bold;
-    font-style: normal;
-}
 
-.main-text-table{
+.title{
     position: absolute;
-    top: 17rem;
-    left: 1rem;
-    width: 99%;
-    height: 5rem;
-    /* background-image: linear-gradient(
-  0deg,
-  hsl(0deg 0% 0%) 0%,
-  hsl(0deg 0% 33%) 24%,
-  hsl(0deg 0% 80%) 38%,
-  hsl(0deg 0% 100%) 50%,
-  hsl(0deg 0% 80%) 64%,
-  hsl(0deg 0% 33%) 78%,
-  hsl(0deg 0% 0%) 100%
-);
-   */
+    font-size: 20rem;
+    transform: translate(-50%, -50%);
+    left:  50%;
+    top: 40%;
+    font-family: 'Major Mono Display', monospace;
+    font-weight:lighter;
 }
 
-.main-text{
-    position: relative;
-    opacity: 1.5;
-    font-size: 25rem;
-    font-family: 'Datalegreya-Thin';
+.subtitle{
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 100%;
+  top: 70%;
+  display: block;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
 
 }
 
-
-/* .without-decor{
-    text-decoration: none;
-    color: white;
-    font-size: 3.5rem; 
-    height: 5rem;
+.home-letter{
+  font-family: 'Major Mono Display', monospace;
+  font-weight:lighter;
 }
 
-.without-decor:hover{
-    background-color: #f4f4f4;
-    color: rgb(0, 0, 0);
-    transition-duration: 2s;
-    position: relative;
+nav{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  height: 2.3rem;
+  top: 0rem;
+  font-family: 'Poiret One', cursive;
+  font-weight: lighter;  
 }
-    
- */
- .wrapper{
-    /* position: fixed; */
+
+.nav-links{
+  display: flex;
+  background-color:rgba(207, 29, 29, 0.56);
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-links li{
+  list-style: none;
+}
+
+.nav-links a{
+  font-size: 2.3rem;
+  color: white;
+  justify-content: space-around;
+  text-decoration: none;
+}  
+
+.menu-button{
+  display: none;
+  cursor: pointer;
+}
+
+.menu-button div{
+  width: 5rem;
+  height: 0.3rem;
+  background-color: rgb(255, 255, 255);
+  margin: 0.5rem;
+  margin-top: 1rem;
+  transition: transform 0.5s ease-in;
+}
+
+a {
+	position: relative;
+	color: #ffffff; 
+	cursor: pointer;
+	line-height: 1; 
+	text-decoration: none; 
+}
+
+a:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px; 
+	background-color: #ffffff; 
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%; 
+}
+
+@media screen and (max-width: 768px) {
+  .title{
     position: absolute;
-    top: 10rem;
-    left: 1rem;
-    /* transform: translate(-50%, -50%); */
-    padding: 10rem 2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    font-size: 6rem;
+  }
+
+  .subtitle{
+    height: 5rem;
+    width: 35rem;
   }
   
-  a{
+  .nav-links {
+    opacity: 0;
+  }
+  .menu-button{
     display: block;
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 3.5rem;
-    font-family: 'Datalegreya-Thin';
-    font-weight: bold;
-    text-decoration: none;
-    color: #ffffff;
-    border: 0.1rem solid #ffffff;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
   }
-  
-  a{
-    position: relative;
-    z-index: 2;
-  }
-  
-  a:after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #fcfbfb;
-    /* color: black; */
-    transition: all .35s;
-  }
-  
-  a:hover{
-    color: #000000;
-    font-size: 2rem;
-    background-color: #ffffff;
-  }
-  
-  a:hover:after{
-    width: 100%;
-  }
+}
