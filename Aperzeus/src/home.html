@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aperzeus</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
-
 </head>
 <body>
-
-
-    <table class="main-text-table">
-        <th class="main-text">
+    <div class="main-text">
+        <div class="title">
             Aperzeus
-        </th>
-    </table>
-
-    <table>
-        <div class="wrapper">
-            <tr>
-                <th><a href="shop">Shop</a></th>
-            </tr>
-
-            <tr>
-                <th class="sector"><a href="cart">Cart</a></th>
-            </tr>
-            <tr>
-                <th class="sector"><a href="help">Help</a></th>
-            </tr>
         </div>
+        <div class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum in nisl nec aliquet. Aliquam erat nisl, sagittis ac lorem.
+        </div>
+    </div>
 
-    </table>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="home" class="home-letter">A</a></li>
+            <li><a href="shop">Shop</a></li>
+            <li><a href="cart">Cart</a></li>
+            <li><a href="help">Help</a></li>
+        </ul>
+        <div class="menu-button">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div> 
+        </div>
+    </nav>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
 </body>
 </html>
